@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/9aac06239c.js"></script>
+    <link href="css/lib/normalize.css" rel="stylesheet">
+    <link href="css/lib/skeleton.css" red="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/homeCtrl.js"></script>
+    <script src="js/portfolioCtrl.js"></script>
+    <script src="js/portfolioDirective.js"></script>
+    <script src="js/resumeCtrl.js"></script>
+    <title>Amanda Olczak's Web Development Portfolio</title>
+</head>
+
+<body ng-app="amandaSite">
+    <header>
+        <nav id="main-nav">
+            <li><a href="#/home">Amanda @ Home</a></li>
+            <li><a href="#/portfolio">Projects</a></li>
+            <li><a href="#/resume">Skills</a></li>
+        </nav>
+        <nav id="social-nav">
+            <li><a href="https://twitter.com/amanda_0O0" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/amandaolczak/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/amanda-olczak" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/purplepanda/" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+        </nav>
+
+        <!-- <a href="https://twitter.com/amanda_0O0" target="_blank">   -->
+    </header>
+    <div id="main-section">
+        <div ng-view></div>
+    </div>
+    <footer>
+        <nav id="footer-menu">
+          <li><a href="mailto:aolczak@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></i> email me</i></a></li>
+          <li>call me</li>
+          <li>github me</li>
+          <li>linkedIn me</li>
+          <li>twitter me</li>
+          <li>instagram me</li>
+        </nav>
+        <blockquote>
+            When atoms are traveling straight down through empty space by their own weight, at quite indeterminate times and places, they swerve ever so little from their course, just so much that you would call it a change of direction. If it were not for this swerve,
+            everything would fall downwards through the abyss of space. No collision would take place and no impact of atom on atom would be created. Thus nature would never have created anything.
+            <cite>&#8212; Lucretius</cite>
+        </blockquote>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</body>
+
+</html>
