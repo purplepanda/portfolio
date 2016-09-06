@@ -10,7 +10,7 @@ app.controller("portfolioCtrl", function($scope) {
       alt: "Amanda Olczak Web Development Portfolio Site"
     },
     githublink: {
-      path: "https://github.com/purplepanda/portfolio_site",
+      path: "https://github.com/purplepanda/portfolio",
       target: "_blank"
     },
     backgroundColor: "#FF5E4F",
