@@ -1,3 +1,364 @@
 * {
-  font-family: 'Archivo Narrow', sans-serif;
-  font-size: 16px; }
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: auto; }
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  font-family: "Josefin Slab", serif; }
+
+h2 {
+  font-size: 1.75em; }
+
+h3 {
+  font-size: 1.5em; }
+
+h4 {
+  font-size: 1.25em; }
+
+h5 {
+  font-size: 1em; }
+
+h6 {
+  font-size: 0.75em; }
+
+p {
+  text-align: justify; }
+
+.top-title {
+  font-size: 2em; }
+
+/********** styles for main app frame **********/
+header {
+  background-image: linear-gradient(#F85646, #FA8072);
+  padding: 1em 2em 3.5em 2em; }
+
+nav li {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  list-style-type: none;
+  text-align: center;
+  padding: 0.5em 1.75em; }
+  nav li:hover {
+    background-image: linear-gradient(#FF947F, #FA8072);
+    color: white;
+    animation: hovergrow 1s 1 linear;
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+nav li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Josefin Slab", serif; }
+  nav li a:hover {
+    color: white;
+    font-weight: 400; }
+
+nav li .fa {
+  color: #F85646; }
+  nav li .fa:hover {
+    color: white; }
+
+#main-nav li {
+  float: left; }
+  #main-nav li a {
+    font-size: 1.25em; }
+
+#social-nav li {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+  float: right;
+  padding: 0.5em .75em; }
+
+footer {
+  min-height: 200px;
+  padding: 1.25em;
+  background-color: #F85646;
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+#footer-nav {
+  width: 175px;
+  margin-right: 75px;
+  display: inline-block;
+  float: left; }
+  #footer-nav .fa {
+    color: #FA8072; }
+    #footer-nav .fa:hover {
+      color: white; }
+
+blockquote {
+  text-align: justify;
+  font-size: 0.9em;
+  color: white;
+  font-weight: 300; }
+
+cite {
+  float: right;
+  font-weight: 600;
+  font-size: 1.25em;
+  font-family: "Josefin Slab", serif;
+  color: white; }
+
+/********** styles for home.html **********/
+#home-content {
+  background-image: linear-gradient(#FA8072, #F85646);
+  text-align: center;
+  padding: 5em; }
+
+#home-left {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  min-width: 500px;
+  height: 500px; }
+
+#home-right {
+  width: 50%;
+  padding: 1em; }
+
+.logo-box {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px;
+  height: 80%;
+  width: 80%;
+  border: 2px solid white;
+  animation: large 25s infinite linear; }
+
+/********** styles for portfolio.html **********/
+#portfolio-content {
+  background-image: linear-gradient(#FA8072, #F85646);
+  text-align: left;
+  width: 100%;
+  padding-top: 0.25em; }
+
+.portfolio-section {
+  -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+  display: inline-block;
+  clear: both;
+  padding: 3em; }
+
+.screenshots {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 55%;
+  display: inline-block;
+  float: left;
+  margin-right: 3em;
+  border: 2px solid white; }
+
+.gitlink {
+  text-decoration: none;
+  float: right; }
+
+.gitlink:hover {
+  font-weight: 600; }
+
+.post-title {
+  font-size: 2.5em;
+  font-weight: 400; }
+
+.post-frameworks {
+  font-size: 1em;
+  font-weight: 300; }
+
+.list-frameworks {
+  font-size: 1.05em;
+  font-weight: 600; }
+
+.description {
+  line-height: 1.25em;
+  max-height: 10em;
+  overflow: hidden; }
+
+/********** styles for resume.html **********/
+#resume-content {
+  background-image: linear-gradient(#FA8072, #F85646);
+  text-align: center;
+  padding: 0.5em 5em; }
+
+#languages {
+  -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+  background-image: linear-gradient(#BFB6AC, #999388);
+  padding: 2em; }
+
+#education {
+  -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+  background-image: linear-gradient(#999388, #515151);
+  padding: 2em;
+  margin-top: 2em; }
+
+.skills {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: inline-block;
+  min-width: 300px;
+  padding: 1em 0.45em;
+  margin: 0.5em;
+  text-align: center;
+  font-size: 1.15em;
+  font-weight: 400;
+  transition: all 5s; }
+
+.date {
+  font-size: 0.75em;
+  font-weight: 300; }
+
+.credentials {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: block;
+  width: 70%;
+  min-width: 325px;
+  margin: 0.75em auto;
+  padding: 0.15em 0.25em;
+  background-image: linear-gradient(#FF947F, #FA8072); }
+
+.school {
+  font-weight: 400; }
+
+.degree {
+  font-size: 0.9em;
+  font-weight: 600;
+  margin-top: -1em; }
+
+/********** @keyframes **********/
+@keyframes hovergrow {
+  0% {
+    background-color: #FA8072;
+    opacity: 0;
+    box-shadow: none; }
+  100% {
+    background-color: #FA8072;
+    opacity: 1;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); } }
+
+@keyframes spinner {
+  from {
+    transform: rotate(45deg); }
+  to {
+    transform: rotate(405deg); } }
+
+@keyframes large {
+  0% {
+    opacity: 0;
+    transform: scale(1.5); }
+  1% {
+    transform: scale(0); }
+  25% {
+    opacity: 1; }
+  50% {
+    opacity: 0;
+    transform: scale(1.5); }
+  100% {
+    transform: scale(0); } }
+
+/********** @media**********/
+@media (max-width: 1050px) {
+  .screenshots {
+    width: 100%;
+    min-width: 300px;
+    display: block;
+    float: none;
+    margin: auto; }
+  .portfolio-right {
+    width: 100%;
+    min-width: 300px;
+    margin: auto; }
+  .description {
+    max-height: 24em; } }
+
+@media (max-width: 750px) {
+  #social-nav {
+    display: none; }
+  #resume-content {
+    padding: 0.5em 4em; }
+  #languages {
+    padding: 1em; }
+  #education {
+    padding: 1em; }
+  .credentials {
+    width: 80%;
+    min-width: 325px; } }
+
+@media (max-width: 600px) {
+  #footer-nav {
+    width: 100%;
+    margin: auto;
+    display: block;
+    clear: both;
+    padding: 2em; }
+  #blockquote {
+    width: 100%;
+    display: block;
+    clear: both;
+    padding: 2em;
+    margin: auto; }
+  #resume-content {
+    padding: 0.5em 2em; }
+  #languages {
+    padding: 0.25em; }
+  #education {
+    padding: 0.25em; }
+  .credentials {
+    width: 85%;
+    min-width: 325px; } }
+
+@media (max-width: 425px) {
+  body {
+    min-width: 325px; }
+  #main-nav li {
+    width: 100%;
+    margin: auto;
+    display: block;
+    float: none;
+    clear: both; }
+  .top-title {
+    margin-top: -1em; }
+  #resume-content {
+    padding: 0.5em 0.25em; }
+  #languages {
+    padding: 0.25em; }
+  #education {
+    padding: 0.25em; }
+  .credentials {
+    width: 95%;
+    min-width: 300px; } }

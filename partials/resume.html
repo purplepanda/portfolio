@@ -1,4 +1,16 @@
 <div id="resume-content">
-    <h1>Things I Can Do and Where I've Done Them</h1>
-    
+    <h1 class="top-title">For a list of my skills and educational experiences, please see below</h1>
+  <div id="languages">
+    <h1>Languages + Technologies</h1>
+    <skill-post ng-repeat="skill in skills"></skill-post>
+  </div>
+
+  <div id="education">
+    <h1>Education + Training</h1>
+    <div ng-repeat="credential in credentials" class="credentials">
+      <h2 class="school">{{credential.school}}</h2>
+      <h3 class ="degree">{{credential.degree | uppercase}}</h3>
+    </div>
+  </div>
+
 </div>

@@ -1,15 +1,26 @@
 <div ng-style="{ 'background-color': '{{post.backgroundColor}}' }">
-<div ng-style="{ 'color': '{{post.color}}' }">
-<div class="portfolio-section">
-  <div class="row">
-    <img class="screenshots six columns" ng-src="{{post.image.path}}" alt="{{post.path.alt}}"/>
-      <h5 class="five">{{post.date}}
-        <a class="gitlink" href="{{post.githublink.path}}" target="{{post.githublink.target}}">GitHub Link</a>
-      </h5>
-      <h2>{{post.title}}</h2>
-      <h3>languages/frameworks:</br>{{post.skills | uppercase}}</h3>
-      <p class="description">{{post.description}}</p>
+  <div class="portfolio-section">
+
+
+
+    <div class="portfolio-left">
+      <img class="screenshots" ng-src="{{post.image.path}}" alt="{{post.path.alt}}"/>
+    </div>
+
+
+
+    <div class="portfolio-right">
+        <h5>{{post.date}}
+          <a class="gitlink" href="{{post.githublink.path}}" target="{{post.githublink.target}}">GitHub Link</a>
+        </h5>
+
+        <h2 class="post-title">{{post.title}}</h2>
+
+        <h3 class="post-frameworks">languages + frameworks:</br><span class="list-frameworks">{{post.skills | uppercase}}</span></h3>
+
+        <p class="description"></br>{{post.description}}</p>
+    </div>
+
+
   </div>
-</div>
-</div>
 </div>
