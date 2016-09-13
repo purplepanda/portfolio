@@ -8,28 +8,27 @@ $grey-medlt: #A09A8E;
 $grey-medium: #999388;
 $grey-dark: #515151;
 $font-fancy: 'Josefin Slab', serif;
-$font-main: 'Raleway', sans-serif;
-
-
-// font-family: 'Kaushan Script', cursive;
+$font-main: 'Lato', sans-serif;
+// $font-main: 'Raleway', sans-serif;
 // font-family: 'Lato', sans-serif;
 
 //I am using autoprefixer, so I should need these, but I'm playing with them anyway
 @mixin box-sizing($param) {
-  -moz-box-sizing: $param;;
+  -moz-box-sizing: $param;
   -ms-box-sizing: $param;
   -webkit-box-sizing: $param;
   box-sizing: $param;
 }
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
 }
 @mixin box-shadow($shadow...) {
   -webkit-box-shadow: $shadow;
   -moz-box-shadow: $shadow;
+  -ms-box-shadow: $shadow;
   box-shadow: $shadow;
 }
 
@@ -42,8 +41,13 @@ $font-main: 'Raleway', sans-serif;
 }
 body {
   margin: auto;
+  padding: 0;
+  height: 100%;
 }
-
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
 h1 {
   font-size: 3em;
   text-align: center;
@@ -121,6 +125,7 @@ nav li .fa {
 }
 
 footer {
+  width: 100%;
   min-height: 200px;
   padding: 1.25em;
   background-color: $highlight1;
@@ -142,7 +147,7 @@ footer {
 
 blockquote {
   text-align: justify;
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: $white;
   font-weight: 300;
 }
@@ -161,28 +166,28 @@ cite {
 #home-content {
   background-image: linear-gradient($highlight2, $highlight1);
   text-align: center;
-  padding: 5em;
+  padding: 5%;
 }
 
-#home-left {
-  display: inline-block;
-  float: left;
-  width: 50%;
-  min-width: 500px;
-  height: 500px;
-}
-
-#home-right {
-  width: 50%;
-  padding: 1em;
-}
-
-.logo-box {
-  @include border-radius(25px);
-  height: 80%;
+#bio {
   width: 80%;
-  border: 2px solid white;
-  animation: large 25s infinite linear;
+  max-width: 500px;
+  margin: auto;
+}
+.intro {
+  text-align: justify;
+}
+
+svg {
+  max-width: 750px;
+  min-width: 300px;
+  width: 100%;
+  margin-top: -5em;
+  margin-bottom: -13em;
+}
+
+#XMLID_284_ {
+  animation: spinner 10s infinite linear;
 }
 
 
@@ -280,11 +285,11 @@ cite {
   // background-image: linear-gradient($grey-medium, $grey-medlt);
 }
 .school {
-  font-weight: 400;
+  font-weight: 300;
 }
 .degree {
   font-size: 0.9em;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: -1em;
 }
 
@@ -307,11 +312,20 @@ cite {
 }
 
 @keyframes spinner {
-  from {
-    transform: rotate(45deg)
+  0% {
+    transform: rotate(0deg)
   }
-  to {
-    transform: rotate(405deg)
+  25% {
+    transform: rotate(0.85deg)
+  }
+  50% {
+    transform: rotate(0deg)
+  }
+  75% {
+    transform: rotate(-1.5deg)
+  }
+  100% {
+    transform: rotate(0deg)
   }
 }
 
@@ -342,7 +356,13 @@ cite {
     max-height: 24em;
   }
 }
-
+// @media (max-width: 950px) {
+//   .intro {
+//     font-size: 1.15em;
+//     padding-top: 5em;
+//     padding-bottom: 1em;
+//   }
+// }
 @media (max-width: 750px) {
   #social-nav {
     display: none;
@@ -360,9 +380,14 @@ cite {
     width: 80%;
     min-width: 325px;
   }
+  .intro {
+    font-size: 1.15em;
+    padding-top: 5em;
+    padding-bottom: 1em;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   #footer-nav {
     width: 100%;
     margin: auto;
@@ -377,6 +402,10 @@ cite {
     padding: 2em;
     margin: auto;
   }
+}
+
+@media (max-width: 600px) {
+
   #resume-content {
     padding: 0.5em 2em;
   }
@@ -389,6 +418,11 @@ cite {
   .credentials {
     width: 85%;
     min-width: 325px;
+  }
+  .intro {
+    font-size: 1em;
+    padding-top: 8em;
+    padding-bottom: 1em;
   }
 }
 

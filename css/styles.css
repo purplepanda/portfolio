@@ -1,5 +1,5 @@
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 16px;
   color: white;
@@ -9,7 +9,13 @@
   box-sizing: border-box; }
 
 body {
-  margin: auto; }
+  margin: auto;
+  padding: 0;
+  height: 100%; }
+
+#wrapper {
+  min-height: 100%;
+  position: relative; }
 
 h1 {
   font-size: 3em;
@@ -56,6 +62,7 @@ nav li {
     animation: hovergrow 1s 1 linear;
     -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -ms-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 nav li a {
@@ -85,11 +92,13 @@ nav li .fa {
   padding: 0.5em .75em; }
 
 footer {
+  width: 100%;
   min-height: 200px;
   padding: 1.25em;
   background-color: #F85646;
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -ms-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 #footer-nav {
@@ -104,7 +113,7 @@ footer {
 
 blockquote {
   text-align: justify;
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: white;
   font-weight: 300; }
 
@@ -119,28 +128,25 @@ cite {
 #home-content {
   background-image: linear-gradient(#FA8072, #F85646);
   text-align: center;
-  padding: 5em; }
+  padding: 5%; }
 
-#home-left {
-  display: inline-block;
-  float: left;
-  width: 50%;
-  min-width: 500px;
-  height: 500px; }
-
-#home-right {
-  width: 50%;
-  padding: 1em; }
-
-.logo-box {
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  border-radius: 25px;
-  height: 80%;
+#bio {
   width: 80%;
-  border: 2px solid white;
-  animation: large 25s infinite linear; }
+  max-width: 500px;
+  margin: auto; }
+
+.intro {
+  text-align: justify; }
+
+svg {
+  max-width: 750px;
+  min-width: 300px;
+  width: 100%;
+  margin-top: -5em;
+  margin-bottom: -13em; }
+
+#XMLID_284_ {
+  animation: spinner 10s infinite linear; }
 
 /********** styles for portfolio.html **********/
 #portfolio-content {
@@ -152,6 +158,7 @@ cite {
 .portfolio-section {
   -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+  -ms-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
   display: inline-block;
   clear: both;
@@ -164,6 +171,7 @@ cite {
   border-radius: 2px;
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -ms-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 55%;
   display: inline-block;
@@ -204,6 +212,7 @@ cite {
 #languages {
   -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+  -ms-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
   background-image: linear-gradient(#BFB6AC, #999388);
   padding: 2em; }
@@ -211,6 +220,7 @@ cite {
 #education {
   -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+  -ms-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.12);
   background-image: linear-gradient(#999388, #515151);
   padding: 2em;
@@ -223,6 +233,7 @@ cite {
   border-radius: 2px;
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -ms-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: inline-block;
   min-width: 300px;
@@ -244,6 +255,7 @@ cite {
   border-radius: 2px;
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -ms-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: block;
   width: 70%;
@@ -253,11 +265,11 @@ cite {
   background-image: linear-gradient(#FF947F, #FA8072); }
 
 .school {
-  font-weight: 400; }
+  font-weight: 300; }
 
 .degree {
   font-size: 0.9em;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: -1em; }
 
 /********** @keyframes **********/
@@ -272,10 +284,16 @@ cite {
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); } }
 
 @keyframes spinner {
-  from {
-    transform: rotate(45deg); }
-  to {
-    transform: rotate(405deg); } }
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(0.85deg); }
+  50% {
+    transform: rotate(0deg); }
+  75% {
+    transform: rotate(-1.5deg); }
+  100% {
+    transform: rotate(0deg); } }
 
 @keyframes large {
   0% {
@@ -317,9 +335,13 @@ cite {
     padding: 1em; }
   .credentials {
     width: 80%;
-    min-width: 325px; } }
+    min-width: 325px; }
+  .intro {
+    font-size: 1.15em;
+    padding-top: 5em;
+    padding-bottom: 1em; } }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   #footer-nav {
     width: 100%;
     margin: auto;
@@ -331,7 +353,9 @@ cite {
     display: block;
     clear: both;
     padding: 2em;
-    margin: auto; }
+    margin: auto; } }
+
+@media (max-width: 600px) {
   #resume-content {
     padding: 0.5em 2em; }
   #languages {
@@ -340,7 +364,11 @@ cite {
     padding: 0.25em; }
   .credentials {
     width: 85%;
-    min-width: 325px; } }
+    min-width: 325px; }
+  .intro {
+    font-size: 1em;
+    padding-top: 8em;
+    padding-bottom: 1em; } }
 
 @media (max-width: 425px) {
   body {

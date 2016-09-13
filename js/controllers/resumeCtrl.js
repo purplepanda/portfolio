@@ -83,7 +83,7 @@ app.controller("resumeCtrl", function($scope) {
       $('.skills').each(function(idx, element) {
         $(element).css('backgroundColor', randomBackgroundColor());
       });
-    }, 1000 * 1);
+    }, 1000 * 2);
 
   })();
 
