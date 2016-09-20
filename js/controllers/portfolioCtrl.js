@@ -18,7 +18,7 @@ app.controller("portfolioCtrl", function($scope) {
   }, {
     title: "Cook Love Connect",
     skills: "AngularJS, JavaScript, Google Firebase, HTML5, CSS3, Materialize.css, Gulp",
-    description: "Cook Love Connect is an app for users to store their favorite recipes. The site is fully responsive so recipes are easy to cook using any device. Cook Love Connect was built with AngularJS on the front-end and Google Firebase on the back-end. To enter the site as a guest, please use the email address of 'guest.clc.2016@gmail.com' and password of 'lovecooking.' Bon appetit!",
+    description: "Cook Love Connect (www.cookloveconnect.com) is an app for users to store their favorite recipes. The site is fully responsive so recipes are easy to cook using any device. Cook Love Connect was built with AngularJS on the front-end and Google Firebase on the back-end. To enter the site as a guest, please use the email address of 'guest.clc.2016@gmail.com' and password of 'lovecooking.' Bon appetit!",
     image: {
       path: "images/cookloveconnect.jpg",
       alt: "www.CookLoveConnnect.com, logged in"
